@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import logo from "../../images/logo/logo.png";
 import JoinButton from "./../Joinbutton";
 
 function Navbar() {
@@ -21,7 +20,7 @@ function Navbar() {
         <div className="flex items-center">
           <a href="/">
             <img
-              src={logo}
+              src="/images/logo/logo.png"
               width="100px"
               height="100px"
               alt="Logo"
