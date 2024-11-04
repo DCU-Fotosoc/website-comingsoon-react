@@ -4,7 +4,6 @@ import JoinButton from "../Joinbutton";
 const ContinuousScrollZoom = () => {
   const [isZooming, setIsZooming] = useState(false);
   const containerRef = useRef(null);
-
   const images = [
     "/images/hero/hero_1.png",
     "/images/hero/hero_2.png",
@@ -31,12 +30,11 @@ const ContinuousScrollZoom = () => {
             src={src}
             alt={`Grid image ${index + 1}`}
             className={`w-full h-full object-cover ${
-              index === 4 ? "z-20" : "z-10"
+              index === 3 || index === 4 || index === 7 ? "z-20" : "z-10"
             }`}
           />
         ))}
       </div>
-
       <div className="relative z-30 text-center bg-white bg-opacity-80 p-6 rounded-lg shadow-lg">
         <h2 className="text-4xl font-bold mb-4">Website Coming Soon</h2>
         <p className="text-xl mb-6">In the meantime you can join us today!</p>
